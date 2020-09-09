@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">老人健康监控</string>
+    <string name="title_health">健康状况趋势</string>
+    <string name="title_smartdev">我的设备</string>
+    <string name="title_contact">一键拨号</string>
+    <string name="title_about">我的</string>
+</resources>

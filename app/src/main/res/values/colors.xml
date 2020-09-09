@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#007AFF</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorButtom">#007AFF</color>
+    <color name="colorButtomUnselected">#C0C0C0</color>
+    <color name="colorTextSelected">#FF4900</color>
+    <color name="colorWhite">#FEFFFE</color>
+    <color name="colorBackground">#F1F2F7</color>
+</resources>
