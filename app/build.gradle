@@ -37,4 +37,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation files('libs/mysql-connector-java-5.1.47.jar')
     implementation 'tech.linjiang:suitlines:1.1.0'
+    implementation  'com.irozon.ratifier:ratifier:1.0.0'
+
 }

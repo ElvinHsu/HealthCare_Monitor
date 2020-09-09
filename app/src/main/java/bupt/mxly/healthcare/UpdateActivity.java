@@ -40,17 +40,17 @@ public class UpdateActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.update);
         insertbutton = (Button)findViewById(R.id.bt_insert);
-        phonetoinsert = (EditText) findViewById(R.id.phonetoinsert);
-        pwdtoinsert = (EditText) findViewById(R.id.pwdtoinsert);
-        pwdtoverify=(EditText)findViewById(R.id.pwdtoverify);
-        nametoinsert = (EditText) findViewById(R.id.nametoinsert);
-        agetoinsert = (EditText) findViewById(R.id.agetoinsert);
-        heightroinsert = (EditText) findViewById(R.id.heighttoinsert);
-        weighttoinsert = (EditText) findViewById(R.id.weighttoinsert);
-        sextoinsert = (EditText) findViewById(R.id.sextoinsert);
-        bloodtoinsert = (EditText) findViewById(R.id.bloodtoinsert);
-        historytoinsert = (EditText) findViewById(R.id.historytoinsert);
-        addresstoinsert = (EditText) findViewById(R.id.addresstoinsert);
+        //phonetoinsert = (EditText) findViewById(R.id.phonetoinsert);
+//        pwdtoinsert = (EditText) findViewById(R.id.pwdtoinsert);
+//        pwdtoverify=(EditText)findViewById(R.id.pwdtoverify);
+//        nametoinsert = (EditText) findViewById(R.id.nametoinsert);
+//        agetoinsert = (EditText) findViewById(R.id.agetoinsert);
+//        heightroinsert = (EditText) findViewById(R.id.heighttoinsert);
+//        weighttoinsert = (EditText) findViewById(R.id.weighttoinsert);
+//        sextoinsert = (EditText) findViewById(R.id.sextoinsert);
+//        bloodtoinsert = (EditText) findViewById(R.id.bloodtoinsert);
+//        historytoinsert = (EditText) findViewById(R.id.historytoinsert);
+//        addresstoinsert = (EditText) findViewById(R.id.addresstoinsert);
 
         setStatusBarFullTransparent();
         setFitSystemWindow(true);
@@ -70,37 +70,37 @@ public class UpdateActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(pwdtoinsert.getText().toString().equals(pwdtoverify.getText().toString())){
-                    DBAdapter db = new DBAdapter();
-                    UserInfo info = new UserInfo();
-                    info.setPhone(phone);
-                    System.out.println(phone);
-                    info.setName(nametoinsert.getText().toString());
-                    info.setPwd(rc4.crypt(pwdtoinsert.getText().toString()));
-                    info.setAge(Integer.parseInt(agetoinsert.getText().toString()));
-                info.setHeight(Double.parseDouble(heightroinsert.getText().toString()));
-                info.setWeight(Double.parseDouble(weighttoinsert.getText().toString()));
-                info.setSex(sextoinsert.getText().toString());
-                info.setBlood(bloodtoinsert.getText().toString());
-                info.setHistory(historytoinsert.getText().toString());
-                info.setAddress(addresstoinsert.getText().toString());
+//                if(pwdtoinsert.getText().toString().equals(pwdtoverify.getText().toString())){
+//                    DBAdapter db = new DBAdapter();
+//                    UserInfo info = new UserInfo();
+//                    info.setPhone(phone);
+//                    System.out.println(phone);
+//                    info.setName(nametoinsert.getText().toString());
+//                    info.setPwd(rc4.crypt(pwdtoinsert.getText().toString()));
+//                    info.setAge(Integer.parseInt(agetoinsert.getText().toString()));
+//                info.setHeight(Double.parseDouble(heightroinsert.getText().toString()));
+//                info.setWeight(Double.parseDouble(weighttoinsert.getText().toString()));
+//                info.setSex(sextoinsert.getText().toString());
+//                info.setBlood(bloodtoinsert.getText().toString());
+//                info.setHistory(historytoinsert.getText().toString());
+//                info.setAddress(addresstoinsert.getText().toString());
+//
+//                    db.updateUserInfo(info);
+//
+//                    Intent intent=new Intent(UpdateActivity.this, MainActivity.class);
+//                    intent.putExtra("userinfo",info);
+//                    setResult(1,intent);
+//                    finish();
+//                }
+//                else{
+//                    Toast toast=Toast.makeText(UpdateActivity.this,"两次输入密码不一致！请您重新输入",Toast.LENGTH_SHORT    );
+//                    toast.setGravity(Gravity.CENTER, 0, 0);
+//                    toast.show();
+//                    pwdtoinsert.setText("");
+//                    pwdtoverify.setText("");
+//                }
 
-                    db.updateUserInfo(info);
-
-                    Intent intent=new Intent(UpdateActivity.this, MainActivity.class);
-                    intent.putExtra("userinfo",info);
-                    setResult(1,intent);
-                    finish();
-                }
-                else{
-                    Toast toast=Toast.makeText(UpdateActivity.this,"两次输入密码不一致！请您重新输入",Toast.LENGTH_SHORT    );
-                    toast.setGravity(Gravity.CENTER, 0, 0);
-                    toast.show();
-                    pwdtoinsert.setText("");
-                    pwdtoverify.setText("");
-                }
-
-
+            finish();
             }
         });
     }

@@ -25,6 +25,7 @@
         </activity>
         <activity android:name="bupt.mxly.healthcare.LoginActivity"/>
         <activity android:name="bupt.mxly.healthcare.RegisterActivity"/>
+        <activity android:name="bupt.mxly.healthcare.UpdateActivity"/>
         <activity android:name="bupt.mxly.healthcare.ui.contact.contact" />
     </application>
 

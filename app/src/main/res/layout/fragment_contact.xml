@@ -15,12 +15,6 @@
         android:showDividers="middle"
         android:dividerPadding="10dp"
         tools:context=".MainActivity" >
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:background="#000000" />
-
         <TextView
             android:id="@+id/text_emergency_call"
             android:layout_width="wrap_content"
@@ -33,39 +27,106 @@
             android:textColor="#000000"
             android:textSize="40sp" />
 
-        <Button
-            android:id="@+id/btn_call_110"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="140dp"
-            android:layout_gravity="center"
-            android:text="拨打110"
-            android:textSize="30sp"/>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="25dp"
+            android:background="@color/colorWhite"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="0dp">
 
-        <Button
-            android:id="@+id/btn_call_120"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="拨打120"
-            android:textSize="30sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/btn_call_110"
+                android:gravity="center">
 
-        <Button
-            android:id="@+id/btn_call_119"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="拨打119"
-            android:textSize="30sp"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="拨打110"
+                   android:gravity="center"
+                   android:textSize="30dp"
+                   />
 
-        <Button
-            android:id="@+id/btn_call_elder"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="拨打老人电话"
-            android:textSize="30sp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:background="@color/colorWhite"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="0dp">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/btn_call_120"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="拨打120"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:background="@color/colorWhite"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/btn_call_119"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="拨打119"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:background="@color/colorWhite"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/btn_call_elder"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="拨打老人电话"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

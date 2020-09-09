@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         phone_login = (EditText)findViewById(R.id.phone_login);
         pwd_login = (EditText)findViewById(R.id.pwd_login);
         bt_login = (Button)findViewById(R.id.bt_login);
-        login_result=(TextView)findViewById(R.id.login_result);
+        //login_result=(TextView)findViewById(R.id.login_result);
 
         setStatusBarFullTransparent();
         setFitSystemWindow(true);

@@ -2,73 +2,136 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/pwdtoinsert"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/text_emergency_call"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:inputType="textPassword"
-        android:hint="请输入密码"
-        />
-    <EditText
-        android:id="@+id/pwdtoverify"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="25dp"
+        android:text="今日健康"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:inputType="textPassword"
-        android:hint="请再次输入密码"
-        />
-    <EditText
-        android:id="@+id/nametoinsert"
+        android:layout_height="130dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorWhite"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:text="血压-高压"
+                    android:textColor="@color/colorTextSelected"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <EditText
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textSize="40dp"
+                android:gravity="center"
+                android:text="180"/>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="请输入姓名"
-        />
-    <EditText
-        android:id="@+id/agetoinsert"
+        android:layout_height="130dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@color/colorWhite"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:text="血压-低压"
+                    android:textColor="@color/colorTextSelected"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <EditText
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textSize="40dp"
+                android:gravity="center"
+                android:text="80"/>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="请输入年龄"
-        />
-        <EditText
-            android:id="@+id/heighttoinsert"
+        android:layout_height="130dp"
+        android:layout_margin="30dp"
+        android:background="@color/colorWhite"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="请输入身高"
-            />
-        <EditText
-            android:id="@+id/weighttoinsert"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="请输入体重"
-            />
-        <EditText
-            android:id="@+id/sextoinsert"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="请输入性别"
-            />
-        <EditText
-            android:id="@+id/bloodtoinsert"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="请输入血型"
-            />
-        <EditText
-            android:id="@+id/historytoinsert"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="请输入病历"
-            />
-        <EditText
-            android:id="@+id/addresstoinsert"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="请输入地址"
-            />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:text="血糖"
+                    android:textColor="@color/colorTextSelected"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <EditText
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textSize="50dp"
+                android:gravity="center"
+                android:text="80"/>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
     <Button
+        android:layout_marginHorizontal="30dp"
         android:id="@+id/bt_insert"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="完成修改"/>
+        android:layout_height="50dp"
+        android:text="完成"/>
 </LinearLayout>
